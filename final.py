@@ -65,11 +65,15 @@ y_sq = np.zeros(total)
 y_tri = np.zeros(total)
 
 #sygnaly wejsciowe
-us = ampl * np.sin(w * t)
+us = []
+uf = []
+ut = []
 
-uf = np.where(us > 0, ampl, -ampl)
+for i in range(total):
+    us.append(ampl * np.sin(w * h * i))
+    uf.append(np.where(us[i] > 0, ampl, -ampl))
+    ut.append(ampl * signal.sawtooth( (w*h*i)+pi/2, 0.5))
 
-ut = ampl * signal.sawtooth( (w*t)+pi/2, 0.5)
 
 
 for i in range(total):
