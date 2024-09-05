@@ -5,7 +5,6 @@ from scipy import signal
 
 h = 0.001 #krok calkowania
 czas_symulacji = 10.0
-f = 2.5 # liczba okresow sygnalu w czasie symulacji
 pi = np.pi
 
 
@@ -21,6 +20,7 @@ b01 = float(input("Wartosc parametru b0: "))
 kp = float(input("Wartosc parametru kp: "))
 ki = float(input("Wartosc parametru ki: "))
 ampl = float(input("Wartosc parametru amplitudy:"))
+f = float(input("Liczba okresow sygnalu w czasie symulacji:"))
 
 a3 = 1
 a2 = (b11 + (a11 * kp))/b21
