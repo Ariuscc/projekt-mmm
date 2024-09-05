@@ -5,7 +5,7 @@ from scipy import signal
 
 h = 0.001 #krok calkowania
 czas_symulacji = 10.0
-f = 2.5 # liczba okresow sygnalu harmonicznego w czasie symulacji
+f = 2.5 # liczba okresow sygnalu w czasie symulacji
 pi = np.pi
 
 
