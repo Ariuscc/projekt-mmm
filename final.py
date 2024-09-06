@@ -11,7 +11,8 @@ pi = np.pi
 a3, a2, a1, a0 = 0, 0, 0, 0  
 b3, b2, b1, b0 = 0, 0, 0, 0  
 
-
+print("Transmitancja naszego układu= (a1*s + a0)/(b2*s^2+b1*s+b0)")
+print("Transmitancja regulatora PI: kp + ki/s")
 a11 = float(input("Wartosc parametru a1: "))
 a01 = float(input("Wartosc parametru a0: "))
 b21 = float(input("Wartosc parametru b2: "))
