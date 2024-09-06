@@ -32,14 +32,13 @@ b1 = ((a11 * ki) + (a01 * kp))/b21
 b0 = (a01 * ki)/b21
 
 
-A = np.array([[0, 1, 0, 0],
-              [0, 0, 1, 0],
-              [0, 0, 0, 1],
-              [-a0, -a1, -a2, -a3]])
+A = np.array([[0, 1, 0],
+              [0, 0, 1],
+              [-a0, -a1, -a2]])
 
-B = np.array([0, 0, 0, 1])
+B = np.array([0, 0, 1])
 
-C = np.array([b0, b1, b2, b3])
+C = np.array([b0, b1, b2])
 
 D = 0
 
@@ -53,12 +52,12 @@ t = np.arange(0, czas_symulacji, h)
 
 
 # zerowe warunki poczatkowe
-xi1_sin = np.array([0, 0, 0, 0])
-xi1_sq = np.array([0, 0, 0, 0])
-xi1_tri = np.array([0, 0, 0, 0])
-xi2_sin = np.array([0, 0, 0, 0])
-xi2_sq = np.array([0, 0, 0, 0])
-xi2_tri = np.array([0, 0, 0, 0])
+xi1_sin = np.array([0, 0, 0])
+xi1_sq = np.array([0, 0, 0])
+xi1_tri = np.array([0, 0, 0])
+xi2_sin = np.array([0, 0, 0])
+xi2_sq = np.array([0, 0, 0])
+xi2_tri = np.array([0, 0, 0])
 
 y_sin = np.zeros(total)
 y_sq = np.zeros(total)
